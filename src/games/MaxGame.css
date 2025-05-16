@@ -1,0 +1,179 @@
+/* General Body Styles */
+
+/* Game Container */
+.game-container {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 16px;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  margin: 20px auto;
+}
+
+/* Header Styles */
+pre {
+  font-size: 2.5rem;
+  color: #ffb347;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+
+/* Input Box */
+.input-field {
+  width: 80%;
+  max-width: 300px;
+  padding: 12px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: 2px solid #4caf50;
+  background-color: #f0f0f0;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 15px 0;
+  transition: all 0.3s ease;
+}
+
+/* Submit Button Styles */
+.submit-btn {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  background: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  margin-left: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #ff4500;
+  transform: translateY(-2px);
+}
+
+.submit-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Question Box */
+.question-box {
+  background-color: #4caf50;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  color: white;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Result Box */
+.game-over {
+  background-color: #2196f3;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  color: white;
+  font-size: 1.4rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Reset Button */
+.restart-btn {
+  padding: 12px 24px;
+  background-color: #280dda;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.restart-btn:hover {
+  background-color: #ece4e1;
+  color: #280dda;
+  transform: translateY(-3px);
+}
+
+/* Add Glow Effects to Inputs and Buttons on Focus */
+input:focus,
+button:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.8);
+}
+
+/* Background Gradients for Buttons and Containers */
+button,
+.restart-btn {
+  background: linear-gradient(135deg, #5b504e, #813f0d);
+  transition: all 0.4s ease;
+}
+
+button:hover,
+.restart-btn:hover {
+  background: linear-gradient(135deg, #5f3e25, #8f7872);
+  transform: translateY(-3px);
+}
+
+/* Score and Level Styles */
+.score,
+.level,
+.timer {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: white;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 600px) {
+  .game-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  pre {
+    font-size: 1.8rem;
+  }
+
+  .input-field {
+    width: 100%;
+    max-width: none;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .submit-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .question-box {
+    flex-direction: column;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .restart-btn {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 1.1rem;
+  }
+
+  .score,
+  .level,
+  .timer {
+    font-size: 1rem;
+  }
+}

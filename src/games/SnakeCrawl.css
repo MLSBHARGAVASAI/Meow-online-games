@@ -1,0 +1,159 @@
+:root {
+  --cell-size: 30px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --cell-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --cell-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Snake Game Container */
+.snake-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+/* Game Info Box */
+.game-info {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #34495e;
+}
+
+.game-info h2 {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+.game-info p {
+  font-size: 18px;
+  margin: 3px 0;
+}
+
+/* Start Button */
+.start-btn {
+  padding: 10px 20px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.start-btn:hover {
+  background-color: #2ecc71;
+}
+
+/* Snake Board */
+.snake-board {
+  display: grid;
+  grid-template-columns: repeat(15, var(--cell-size));
+  grid-template-rows: repeat(15, var(--cell-size));
+  gap: 1px;
+  border: 2px solid black;
+  background-color: #f5f6fa;
+  width: fit-content;
+  touch-action: none;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.snake-cell {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  background-color: white;
+}
+
+.snake {
+  background-color: #2ecc71;
+}
+
+.food {
+  background-color: #e74c3c;
+}
+
+/* Game Over Message */
+.game-over-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+.game-over-message h2 {
+  font-size: 26px;
+}
+
+.game-over-message p {
+  font-size: 18px;
+}
+
+/* Mobile Controls */
+.mobile-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-controls button {
+  font-size: 24px;
+  padding: 10px;
+  margin: 4px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 60px;
+}
+
+.mobile-controls button:hover {
+  background-color: #2980b9;
+}
+
+@media (max-width: 480px) {
+  .game-info h2 {
+    font-size: 18px;
+  }
+
+  .game-info p {
+    font-size: 14px;
+  }
+
+  .start-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .mobile-controls button {
+    width: 50px;
+    font-size: 20px;
+  }
+}

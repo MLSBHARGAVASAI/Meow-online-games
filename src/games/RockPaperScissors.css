@@ -1,0 +1,163 @@
+.game-container {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #4114d4; /* Lighter background for the game */
+  border-radius: 10px;
+  width: 350px;
+  margin: 0 auto;
+  
+}
+
+.box {
+  margin: 15px auto;
+  width: 250px;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.choice-btn {
+  font-size: 40px; /* Increase emoji size */
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+  transition: transform 0.1s;
+}
+
+.choice-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.choice-btn:hover:enabled {
+  transform: scale(1.1);
+}
+
+.shuffle-animation {
+  font-style: italic;
+  margin: 10px;
+}
+
+.result-section {
+  margin-top: 20px;
+}
+
+.result-text {
+  font-size: 30px; /* Increase result message font size */
+  font-weight: bold;
+}
+
+.nickname {
+  font-size: 22px; /* Slightly larger nickname */
+  margin: 8px 0;
+  color: #555;
+}
+
+.reset-btn {
+  padding: 10px 20px;
+  background: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.reset-btn:hover {
+  background: #e68a00;
+}
+
+/* Make "Your Choice" and "Computer's Choice" white */
+h3 {
+  color: #6b05d8; /* very light gray, a bit warmer */
+}
+
+.game-container {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #f4faf3; /* Lighter background for the game */
+  border-radius: 10px;
+  width: 350px;
+  margin: 0 auto;
+  
+}
+
+.box {
+  margin: 15px auto;
+  width: 250px;
+  
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.choice-btn {
+  font-size: 40px; /* Increase emoji size */
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+  transition: transform 0.1s;
+}
+
+.choice-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.choice-btn:hover:enabled {
+  transform: scale(1.1);
+}
+
+.shuffle-animation {
+  font-style: italic;
+  margin: 10px;
+}
+
+.result-section {
+  margin-top: 20px;
+}
+
+.result-text {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nickname {
+  font-size: 22px; /* Slightly larger nickname */
+  margin: 8px 0;
+  color: #555;
+}
+
+.reset-btn {
+  padding: 10px 20px;
+  background: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.reset-btn:hover {
+  background: #e68a00;
+}
+
+/* Make "Your Choice" and "Computer's Choice" white */
+h3 {
+  color: rgb(51, 18, 93);
+}

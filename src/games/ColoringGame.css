@@ -1,0 +1,139 @@
+/* General container styling */
+.coloring-game-container {
+  text-align: center;
+  padding: 30px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+#coloring-game-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Color palette section */
+.color-palette {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.color-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.color-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Pen size controls */
+#pen-size-controls {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#pen-size-label {
+  font-size: 1rem;
+}
+
+.pen-size-slider {
+  width: 200px;
+}
+
+#pen-size-value {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Canvas container */
+#canvas-container {
+  border: 5px solid #000;
+  margin: 20px 0;
+  position: relative;
+  border-radius: 10px;
+  background-color: #fff;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+#coloring-canvas {
+  background-color: white;
+  cursor: crosshair;
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  touch-action: none; /* Prevent touch scrolling while drawing */
+}
+
+/* Clear Canvas Button */
+.clear-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: #FF6347;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.clear-btn:hover {
+  background-color: #FF4500;
+}
+
+.clear-btn:active {
+  background-color: #FF2200;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 600px) {
+  .color-btn {
+    width: 35px;
+    height: 35px;
+  }
+
+  #pen-size-controls {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .pen-size-slider {
+    width: 150px;
+  }
+
+  #coloring-game-title {
+    font-size: 1.5rem;
+  }
+
+  .clear-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+
+  /* Make canvas full width with fixed height for mobile */
+  #coloring-canvas {
+    width: 100% !important;
+    height: 300px !important;
+  }
+
+  #canvas-container {
+    border-width: 3px;
+  }
+}

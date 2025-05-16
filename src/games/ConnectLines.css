@@ -1,0 +1,129 @@
+/* ConnectLines.css */
+
+.connect-four-container {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(to right, #141e30, #243b55);
+  min-height: 100vh;
+  color: #ccde08;
+  font-family: 'Poppins', sans-serif;
+}
+
+.connect-four-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.connect-four-menu h1,
+.connect-four-menu h2,
+.connect-four-menu h3 {
+  color: #00d9ff;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.connect-four-btn {
+  background-color: #ff416c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 18px;
+  margin: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.connect-four-btn:hover {
+  background-color: #ff4b2b;
+  transform: scale(1.08);
+}
+
+.connect-four-grid {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: #1c1c3c;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.connect-four-column {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.connect-four-cell {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #00f7ff;
+  border-radius: 10px;
+  margin: 5px 0;
+  background-color: #ecf0f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.connect-four-cell:hover {
+  transform: scale(1.05);
+}
+
+.connect-four-cell span {
+  display: inline-block;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #bdc3c7;
+}
+
+.disc.Red {
+  background-color: #ff4b5c;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+}
+
+.disc.Yellow {
+  background-color: #ffe600;
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.6);
+}
+.connect-four-menu {
+  background-color: #1c1c1c;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 600px;
+  color: #ffffff;
+  border: 2px solid #444;
+}
+.connect-four-title {
+  color: #ffcc00; /* bright yellow for visibility */
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px #000; /* slight shadow for readability */
+}
+.connect-four-winner {
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px #000;
+  margin-top: 20px;
+}
+
+.connect-four-turn {
+  font-size: 22px;
+  color: white;
+  text-shadow: 1px 1px 3px #000;
+  margin-top: 10px;
+}

@@ -1,0 +1,111 @@
+.tictactoe-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .tictactoe-card h2 {
+    font-size: 1.7rem;
+    color: #333;
+  }
+  
+  .tictactoe-card h3 {
+    color: #ff6347;
+    font-size: 1.3rem;
+  }
+  
+  .tictactoe-card h4 {
+    color: #32cd32;
+    font-size: 1.2rem;
+  }
+  
+  .tictactoe-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .tictactoe-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 12px 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .tictactoe-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .tictactoe-btn:focus {
+    outline: none;
+  }
+  
+  .tictactoe-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+    margin: 25px auto;
+    width: 100%;
+    max-width: 260px;
+  }
+  
+  .tictactoe-cell {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    background: #fff;
+    color: #333;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .tictactoe-cell:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tictactoe-cell.disabled {
+    cursor: default;
+    background-color: #eee;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 480px) {
+    .tictactoe-card {
+      padding: 24px;
+      max-width: 95%;
+    }
+  
+    .tictactoe-btn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  
+    .tictactoe-grid {
+      max-width: 220px;
+      gap: 8px;
+    }
+  
+    .tictactoe-cell {
+      font-size: 1.7rem;
+      border-radius: 10px;
+    }
+  }
+  
