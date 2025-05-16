@@ -1,0 +1,96 @@
+/* General container styling */
+.coloring-game-container {
+  text-align: center;
+  padding: 30px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#coloring-game-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Color palette section */
+.color-palette {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.color-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.color-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Pen size controls */
+#pen-size-controls {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pen-size-label {
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.pen-size-slider {
+  width: 200px;
+  margin: 0 10px;
+}
+
+#pen-size-value {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Canvas container */
+#canvas-container {
+  border: 5px solid #000;
+  margin: 20px 0;
+  position: relative;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+#coloring-canvas {
+  background-color: white;
+  cursor: crosshair;
+  border-radius: 10px;
+}
+
+/* Clear Canvas Button */
+.clear-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #FF6347;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.clear-btn:hover {
+  background-color: #FF4500;
+}
+
+.clear-btn:active {
+  background-color: #FF2200;
+}

@@ -1,0 +1,105 @@
+/* Hangman.css */
+.hangman-container {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin: 50px auto;
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 2.5rem;
+  }
+  
+  .word-display {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    margin: 20px 0;
+  }
+  
+  .wrong-guesses {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .letters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .letter-btn {
+    background-color: #ffffff;
+    border: 2px solid #007bff;
+    color: #007bff;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .letter-btn:hover {
+    background-color: #007bff;
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  .letter-btn:disabled {
+    background-color: #e0e0e0;
+    color: #9e9e9e;
+    cursor: not-allowed;
+  }
+  
+  .result {
+    margin: 20px 0;
+  }
+  
+  .game-over {
+    margin-top: 20px;
+  }
+  
+  .play-again-btn {
+    background-color: #dddedd;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .play-again-btn:hover {
+    background-color: #218838;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .result-text {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #d9534f;
+  }
+  .restart-btn {
+    background-color: #007bff;  /* Bootstrap blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .restart-btn:hover {
+    background-color: #0056b3;  /* Darker blue on hover */
+  }
